@@ -1,0 +1,151 @@
+/*
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+*/
+
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-contenair{
+    height: 450px;
+    display: flex; 
+
+}
+
+
+.left{
+    background-image: url(images/image-product-desktop.jpg);
+    width: 300px;
+    height: 450px;
+    background-size: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;}
+
+#right{
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    padding: 30px 0px 0px 30px;
+    width: 300px;
+    height: 420px;
+
+        
+}
+
+#type{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: hsl(228, 12%, 48%);
+}
+
+#right h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    width: 70%;
+    font-size: 30px;
+}
+
+#right p{
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+    width: 90%;
+}
+
+#price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+#discount{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+
+#btn{
+    background-color: hsl(158, 36%, 37%);
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn img{
+    margin-right: 10px;
+}
+
+#btn:hover{
+    background-color: hsl(158, 34%, 14%);
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        height: 100%;
+        padding: 30px;
+
+        
+
+    }
+
+    #main-contenair{
+        display: block;
+        
+    }
+    
+    .left{
+        background-image: url(images/image-product-mobile.jpg);
+        width: 330px;
+        height: 230px;
+        object-fit: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #right{
+        border-radius: 0px 0px 10px 10px;
+        height: 370px;
+    }
+
+    #right h1{
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #right p{
+        width: 98%;
+    }
+  }
